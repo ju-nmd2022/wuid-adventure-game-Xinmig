@@ -1,0 +1,63 @@
+/*标题*/
+.header {
+  height: 100px;
+  text-align: left;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 25px;
+  color: rgb(78, 107, 124);
+  padding-top: 1px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-image: linear-gradient(
+    to left,
+    rgba(124, 184, 212, 1, raba(0, 0, 0, 1))
+  );
+  background: linear-gradient(to right, #94c8ee, #aad8db, #b4eed8);
+}
+
+/* 整体页面 */
+body {
+  border-style: none;
+}
+
+/* 道具栏格子 */
+td {
+  float: right;
+  height: 50px;
+  width: 50px;
+}
+
+/* 整个道具栏 */
+table {
+  float: right;
+}
+
+/* 道具 */
+.props {
+  height: 50px;
+  width: 50px;
+  visibility: hidden;
+}
+
+/* 背景地图 */
+.aki {
+  width: 800px;
+  margin-top: 4%;
+  margin-left: 250px;
+}
+
+/* 商店跳转链接 */
+.storelink {
+  margin-left: 410px;
+}
+
+/* 游戏厅跳转链接 */
+.gameroomlink {
+  margin-left: 60px;
+}
+
+/* 寿司店/结束按键 */
+#sushistore {
+  margin-left: 500px;
+}

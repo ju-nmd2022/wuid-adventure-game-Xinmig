@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="Stylesheet" type="text/css" href="gameroom.css" />
+    <script src="gamecode.js" defer></script>
+    <title>gameroom</title>
+  </head>
+  <body>
+    <!--标题-->
+    <div class="header">
+      <h1>Akihabara Tour</h1>
+    </div>
+    <!--道具栏-->
+    <table border="0">
+      <tr>
+        <!-- 道具金币 -->
+        <td class="coin">
+          <img src="img/coin.jpg" id="coin" class="props" alt="coin" />
+        </td>
+        <!-- 道具玩具 -->
+        <td class="toy">
+          <img src="img/toy.jpg" id="toy" class="props" alt="toy" />
+        </td>
+        <!-- 道具寿司 -->
+        <td class="sushi">
+          <img src="img/sushi-set.png" id="sushi" class="props" alt="sushi" />
+        </td>
+        <!-- 道具打折卷 -->
+        <td class="discount">
+          <img
+            src="img/discount.png"
+            id="discount"
+            class="props"
+            alt="discount"
+          />
+        </td>
+      </tr>
+    </table>
+    <!--道具栏，每页都一样-->
+    <img
+      src="img/gameroom.jpg"
+      id="inroom"
+      class="inroom"
+      alt="InsideGameroom"
+    />
+    <img src="img/coin.jpg" id="pickup" class="pickup" alt="coins" />
+    <button id="misson" class="missionbutton">check mission</button>
+    <a href="/index.html" class="mainpage" alt="Mainstreet">Mainstreet</a>
+  </body>
+</html>
