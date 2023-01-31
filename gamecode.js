@@ -114,38 +114,3 @@ if (document.getElementById("sushistore")) {
     }
   });
 }
-// if (
-//   sessionStorage.getItem("checkToy") === 1 &&
-//   sessionStorage.getItem("checkCoin") === 0
-// ) {
-//   coin.style.visibility = "visible";
-//   toy.style.visibility = "visible";
-// }
-
-/*
-      if (coin.style.visibility === "none" && toy.style.visibility === "none")
-        localStorage.hasOwnProperty("checkCoin");
-      console.log(localStorage.hasOwnProperty("checkCoin"));
-      if (localStorage.hasOwnProperty("checkCoin") === true) {
-        coin.style.visibility = "visible";
-        toy.style.visibility = "visible";
-      }
-*/
-
-// }
-
-// prompt("please enter your name.");
-// var uname = prompt;
-// document.write(uname);
-// var complish = "Congratulations" + " " + uname + "," + "you finish the game!";
-// alert(complish);
-
-//最后如果寿司是true，则弹窗完成游戏
-/*
-if (sushi=true){
-var uname = prompt("please enter your name.");
-document.write(uname);
-var complish = "Congratulations" + uname + "," + "you finish the game!";
-alert(complish);
-}
-*/
