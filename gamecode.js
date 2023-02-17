@@ -9,9 +9,9 @@ let inStore = document.getElementById("talkwith");
 let getToy;
 
 const gameMachine = document.getElementById("inroom");
-//不能动的
+//No need to change
 
-//查看任务键
+//Check mission button
 getMission.addEventListener("click", function theMissionButton() {
   alert(
     "Go buy a take away sushi." +
@@ -51,30 +51,30 @@ if (document.getElementById("talkwith")) {
   });
 }
 
-//提醒拿到硬币，地面硬币消失（有用）
+//Reminder to get coins, ground coins disappear (It's working)
 if (document.getElementById("pickup")) {
   pickup.addEventListener("click", function gotCoin() {
     alert("you got some coins");
     pickup.style.display = "none";
 
-    //如果地上的消失会到道具栏里,保存金币0
-    if ((pickup.style.display = "none")) {
+    //If the coin on the ground disapear then top one will apear,save coin0
+    if (pickup.style.display === "none") {
       coin.style.visibility = "visible";
       sessionStorage.setItem("checkCoin", "0");
       console.log(sessionStorage.getItem("checkCoin"));
     }
 
-    //游戏机随机数字
+    //Gamemachine math random
     if (coin.style.visibility === "visible") {
       gameMachine.addEventListener("click", function tryGet() {
         getToy = Math.floor(Math.random() * 10 + 1);
         if (getToy > 5) {
           alert("You got a toy.");
-          toy.style.visibility = "visible";
+          toy.style.visibility === "visible";
           sessionStorage.setItem("checkToy", "1");
           console.log(sessionStorage.getItem("checkToy"));
-          //如果大于4则拿到玩具在道具栏并保存玩具0
-        } else if ((getToy = 4)) {
+          //If greater than 4 then get the toy in the prop bar and save the toy0
+        } else if (getToy === 4) {
           alert("very close.\nPlease try again.");
         } else {
           alert("you failed to get a toy.\nPlease try again.");
@@ -85,6 +85,7 @@ if (document.getElementById("pickup")) {
   });
 }
 
+//Let item visible in other page
 let aboutCoin = sessionStorage.getItem("checkCoin");
 let aboutToy = sessionStorage.getItem("checkToy");
 let aboutTicket = sessionStorage.getItem("checkTicket");
@@ -102,7 +103,8 @@ if (aboutTicket === "2") {
   discount.style.visibility = "visible";
 }
 
-//在买寿司存在的情况下，如果有折扣就能拿到寿司，否则显示没有折扣卷
+//In the case of buying sushi present,
+//if there is a discount you can get the sushi, otherwise it shows no discount roll
 if (document.getElementById("sushistore")) {
   buySushi.addEventListener("click", function takeSushi() {
     if (discount.style.visibility === "visible") {
