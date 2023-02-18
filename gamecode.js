@@ -19,7 +19,7 @@ getMission.addEventListener("click", function theMissionButton() {
       "Maybe you can go store and ask about it."
   );
 
-  //这条在gotCoin执行之后开始管用
+  //Start to working after gotCoin execute
   if (coin.style.visibility === "visible") {
     alert("Use coin to get a toy.");
   }
@@ -35,7 +35,7 @@ getMission.addEventListener("click", function theMissionButton() {
   console.log("its working.");
 });
 
-//商店里的交谈
+//Conversation in the store
 if (document.getElementById("talkwith")) {
   inStore.addEventListener("click", function talkTo() {
     console.log("it's working");
